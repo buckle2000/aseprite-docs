@@ -19,74 +19,65 @@ Usage:
   aseprite.exe [OPTIONS] [FILES]...
 
 Options:
-      --<a href="#shell">shell</a>                  Start an interactive console to execute scripts
-  -b, --<a href="#batch">batch</a>                  Do not start the UI
-  -p, --<a href="#preview">preview</a>                Do not execute actions, just print what will be
-                               done
-      --<a href="#save-as">save-as</a> &lt;filename&gt;     Save the last given sprite with other format
-      --<a href="#palette">palette</a> &lt;filename&gt;     Change the palette of the last given sprite
-      --<a href="#scale">scale</a> &lt;factor&gt;         Resize all previously opened sprites
-      --<a href="#dithering-algorithm">dithering-algorithm</a> &lt;algorithm&gt;
-                               Dithering algorithm used in --color-mode
-                               to convert images from RGB to Indexed
-      --<a href="#dithering-matrix">dithering-matrix</a> &lt;matrix&gt;
-                               Matrix used in ordered dithering algorithm
-      --<a href="#color-mode">color-mode</a> &lt;mode&gt;      Change color mode of all previously
-                               opened sprites:
-                                 rgb
-                                 grayscale
-                                 indexed
-      --<a href="#data">data</a> &lt;filename.json&gt;   File to store the sprite sheet metadata
-      --<a href="#format">format</a> &lt;format&gt;        Format to export the data file (json-hash, json-array)
-      --<a href="#sheet">sheet</a> &lt;filename.png&gt;   Image file to save the texture
-      --<a href="#sheet-type">sheet-type</a>             Algorithm to create the sprite sheet:
-                                 horizontal
-                                 vertical
-                                 rows
-                                 columns
-                                 packed
-      --<a href="#sheet-width">sheet-width</a> &lt;pixels&gt;   Sprite sheet width
-      --<a href="#sheet-height">sheet-height</a> &lt;pixels&gt;  Sprite sheet height
-      --<a href="#sheet-columns">sheet-columns</a> &lt;columns&gt;
-      --<a href="#sheet-rows">sheet-rows</a> &lt;rows&gt;
-      --<a href="#sheet-pack">sheet-pack</a>             Use a packing algorithm to avoid waste of space
-                               in the texture
-      --<a href="#split-layers">split-layers</a>           Import each layer of the next given sprite as
-                               a separated image in the sheet
-      --<a href="#split-tags">split-tags</a>             Save each tag as a separated file
-      --<a href="#split-slices">split-slices</a>           Save each slice as a separated file
-      --<a href="#layer">layer</a> &lt;name&gt; or
-      --<a href="#layer">import-layer</a> &lt;name&gt;    Include just the given layer in the sheet
-      --<a href="#all-layers">all-layers</a>             Make all layers visible
-                               By default hidden layers will be ignored
-      --<a href="#ignore-layer">ignore-layer</a> &lt;name&gt;    Exclude the given layer in the sheet
-                               or save as operation
-      --<a href="#tag">tag</a> &lt;name&gt;
-      --<a href="#tag">frame-tag</a> &lt;name&gt;       Include tagged frames in the sheet
-      --<a href="#frame-range">frame-range</a> from,to    Only export frames in the [from,to] range
-      --<a href="#ignore-empty">ignore-empty</a>           Do not export empty frames/cels
-      --<a href="#border-padding">border-padding</a> &lt;value&gt; Add padding on the texture borders
-      --<a href="#shape-padding">shape-padding</a> &lt;value&gt;  Add padding between frames
-      --<a href="#inner-padding">inner-padding</a> &lt;value&gt;  Add padding inside each frame
-      --<a href="#trim">trim</a>                   Trim all images before exporting
-      --<a href="#crop">crop</a> x,y,width,height  Crop all the images to the given rectangle
-      --<a href="#slice">slice</a> &lt;name&gt;           Crop the sprite to the given slice area
-      --<a href="#filename-format">filename-format</a> &lt;fmt&gt;  Special format to generate filenames
-      --<a href="#script">script</a> &lt;filename&gt;      Execute a specific script
-      --<a href="#script-param">script-param</a> name=value
-                               Parameter for a script executed from the
-                               CLI that you can access with app.params
-      --<a href="#list-layers">list-layers</a>            List layers of the next given sprite
-                               or include layers in JSON data
-      --<a href="#list-tags">list-tags</a>              List tags of the next given sprite sprite
-                               or include frame tags in JSON data
-      --<a href="#list-slices">list-slices</a>            List slices of the next given sprite sprite
-                               or include slices in JSON data
-      --<a href="#oneframe">oneframe</a>               Load just the first frame
-  -v, --<a href="#verbose">verbose</a>                Explain what is being done
-      --<a href="#debug">debug</a>                  Extreme verbose mode and copy log to desktop
-  -?, --<a href="#help">help</a>                   Display this help and exits
-      --<a href="#version">version</a>                Output version information and exit
+          --<a href="#shell">shell</a>                  Start an interactive console to execute scripts
+      -b, --<a href="#batch">batch</a>                  Do not start the UI
+      -p, --<a href="#preview">preview</a>                Do not execute actions, just print what will be done
+          --<a href="#save-as">save-as</a> &lt;filename&gt;     Save the last given sprite with other format
+          --<a href="#palette">palette</a> &lt;filename&gt;     Change the palette of the last given sprite
+          --<a href="#scale">scale</a> &lt;factor&gt;         Resize all previously opened sprites
+          --<a href="#dithering-algorithm">dithering-algorithm</a> &lt;algorithm&gt;
+                                   Dithering algorithm used in --color-mode to convert images from RGB to Indexed
+          --<a href="#dithering-matrix">dithering-matrix</a> &lt;matrix&gt;
+                                   Matrix used in ordered dithering algorithm
+          --<a href="#color-mode">color-mode</a> &lt;mode&gt;      Change color mode of all previously opened sprites
+                                   Options:
+                                   &nbsp; rgb
+                                   &nbsp; grayscale
+                                   &nbsp; indexed
+          --<a href="#data">data</a> &lt;filename.json&gt;   File to store the sprite sheet metadata
+          --<a href="#format">format</a> &lt;format&gt;        Format to export the data file (json-hash, json-array)
+          --<a href="#sheet">sheet</a> &lt;filename.png&gt;   Image file to save the texture
+          --<a href="#sheet-type">sheet-type</a>             Algorithm to create the sprite sheet
+                                   Options:
+                                   &nbsp; horizontal
+                                   &nbsp; vertical
+                                   &nbsp; rows
+                                   &nbsp; columns
+                                   &nbsp; packed
+          --<a href="#sheet-width">sheet-width</a> &lt;pixels&gt;   Sprite sheet width
+          --<a href="#sheet-height">sheet-height</a> &lt;pixels&gt;  Sprite sheet height
+          --<a href="#sheet-columns">sheet-columns</a> &lt;columns&gt;
+          --<a href="#sheet-rows">sheet-rows</a> &lt;rows&gt;
+          --<a href="#sheet-pack">sheet-pack</a>             Use a packing algorithm to avoid waste of space in the texture
+          --<a href="#split-layers">split-layers</a>           Import each layer of the next given sprite as a separated image in the sheet
+          --<a href="#split-tags">split-tags</a>             Save each tag as a separated file
+          --<a href="#split-slices">split-slices</a>           Save each slice as a separated file
+ --layer, --<a href="#layer">import-layer</a> &lt;name&gt;    Include just the given layer in the sheet
+          --<a href="#all-layers">all-layers</a>             Make all layers visible
+                                   By default hidden layers will be ignored
+          --<a href="#ignore-layer">ignore-layer</a> &lt;name&gt;    Exclude the given layer in the sheet or save as operation
+   --tag, --<a href="#tag">frame-tag</a> &lt;name&gt;       Include tagged frames in the sheet
+          --<a href="#frame-range">frame-range</a> from,to    Only export frames in the [from,to] range
+          --<a href="#ignore-empty">ignore-empty</a>           Do not export empty frames/cels
+          --<a href="#border-padding">border-padding</a> &lt;value&gt; Add padding on the texture borders
+          --<a href="#shape-padding">shape-padding</a> &lt;value&gt;  Add padding between frames
+          --<a href="#inner-padding">inner-padding</a> &lt;value&gt;  Add padding inside each frame
+          --<a href="#trim">trim</a>                   Trim all images before exporting
+          --<a href="#crop">crop</a> x,y,width,height  Crop all the images to the given rectangle
+          --<a href="#slice">slice</a> &lt;name&gt;           Crop the sprite to the given slice area
+          --<a href="#filename-format">filename-format</a> &lt;fmt&gt;  Special format to generate filenames
+          --<a href="#script">script</a> &lt;filename&gt;      Execute a specific script
+          --<a href="#script-param">script-param</a> name=value
+                                   Parameter for a script executed from the
+                                   CLI that you can access with app.params
+          --<a href="#list-layers">list-layers</a>            List layers of the next given sprite or include layers in JSON data
+          --<a href="#list-tags">list-tags</a>              List tags of the next given sprite sprite or include frame tags in JSON data
+          --<a href="#list-slices">list-slices</a>            List slices of the next given sprite sprite or include slices in JSON data
+          --<a href="#oneframe">oneframe</a>               Load just the first frame
+      -v, --<a href="#verbose">verbose</a>                Explain what is being done
+          --<a href="#debug">debug</a>                  Extreme verbose mode and copy log to desktop
+      -?, --<a href="#help">help</a>                   Display this help and exits
+          --<a href="#version">version</a>                Output version information and exit
 </pre>
 
 ## --shell
